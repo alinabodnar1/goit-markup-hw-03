@@ -26,7 +26,9 @@ header {
 }
 .container {
     width: 1200px;
-    padding: 94px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 .list {
     margin: 0;
@@ -78,9 +80,6 @@ header {
     color: var(--title-text-color);
     text-decoration: none;
 }
-.contactus{
-    display: flex;
-}
 .contactus .link{
     display: block;
     padding-top: 32px;
@@ -101,7 +100,6 @@ header {
 .site-nav .link.current{
     color: var(--accent-color);
 }
-
 /* Hero */
 h1,
 h2,
@@ -111,6 +109,8 @@ p {
     margin-top: 0;
 }
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--bg-accent-color);
 }
 .centred {
@@ -161,6 +161,10 @@ p {
     margin: -1px;
 }
 /* Features */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .features{
     display: flex;
     justify-content: center;
@@ -179,9 +183,17 @@ p {
     text-transform: uppercase;
 }
 /* Works */
+.no-padding{
+    padding-top: 0;
+}
 .works{
     display: flex;
     justify-content: center;
+}
+.works .works-item{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*  Our team */
 .gray-bcg{
@@ -203,8 +215,15 @@ p {
     border-radius: 0px 0px 4px 4px;
     background-color:var(--primary-bg-color);
 }
+.team-item >.figcaption{
+    padding: 30px 10px;
+}
+.team-item > .team-item-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .team .member{
-    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: var(--medium-font-weight);
@@ -212,11 +231,14 @@ p {
     line-height: 1.18;
 }
 .team .position{
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.17;
 }
 /* Портфоліо */
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Buttons*/
 .container .buttons {
     padding-bottom: 34px;
@@ -262,7 +284,11 @@ p {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+}
+.grid-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .grid-item:nth-child(3n){
     margin-right: 0;
@@ -278,17 +304,21 @@ p {
     letter-spacing: 0.06em;
 }
 .project .project-descr{
+    margin-top: 4px;
     font-size: 16px;
     line-height: 1.88;
 }
 .project-item{
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 /* Футер */
 footer.footer {
     background-color: var(--bg-accent-color);
-    /* width: 1200px; */
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address a{
     font-style: normal;
